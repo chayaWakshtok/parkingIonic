@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Enter address</ion-title>
+    <!-- <ion-searchbar [(ngModel)]="autocomplete.query" [showCancelButton]="true"   (ionInput)="updateSearch()" ></ion-searchbar> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- <ion-item *ngFor="let item of autocompleteItems" tappable   (click)="chooseItem(item)">
+      {{ item }}
+    </ion-item> -->
+    <google-places-autocomplete (callback)="detail($event[0])" key="AIzaSyB68dKZFTMn0ecKTCE2MvJ5PSMBsR01pjc"></google-places-autocomplete>
+
+  </ion-list>
+</ion-content>
